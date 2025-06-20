@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <script type="text/javascript">
+        function ParameterizeFunction(a,b){
+                alert(a/b)
+        }
+        function ParameterizeFunctionwithreturn(a,b){
+                return(a/b)
+        }
+       // ParameterizeFunction(20,4)
+        //document.write(ParameterizeFunctionwithreturn(20,4))
+        function clckwithalert(){
+            a=document.getElementById('txt1').value
+            b=document.getElementById('txt2').value
+            alert(a+b)
+        }
+        function clckwithdocment_write(){
+            a=document.getElementById('txt1').value;
+            b=document.getElementById('txt2').value;
+            document.write(a+b)
+        }
+        function readandwrite(){
+            a=document.getElementById('txt1').value;
+            document.getElementById('txt2').value=a;
+            
+           
+        }
+        function cutpaste(){
+            a=document.getElementById('txt1').value;
+            document.getElementById('txt2').value=a;
+            document.getElementById('txt1').value=""
+           
+        }
+        function addition(){
+            x=0
+            y=0
+            a=document.getElementById('txt1').value;
+            b=document.getElementById('txt2').value;
+            if (a=="" || a<0){
+                document.getElementById("lb1").innerHTML="text box 1  is negative or blank "
+                x++
+            }
+            else{
+                document.getElementById('lb1').innerHTML="";
+            }
+    
+             if(b=="" || b<0){
+                document.getElementById("lb2").innerHTML ="text box 2  is negative or blank "
+                y++
+            }
+            else{
+                document.getElementById('lb2').innerHTML="";
+            }
+            
+                if(x==0 && y==0){
+
+                    document.getElementById('txt3').value= parseInt(a)+parseInt(b)
+                    document.getElementById("lb1").innerHTML =""
+                    document.getElementById("lb2").innerHTML =""
+                }
+            }           
+        
+        function sub(){
+            if (a=="" || a<0){
+                alert("text box 1  is negative or may be blank")
+            }
+            else if(b=="" || b<0){
+                alert("text box 2  is negative or may be blank")
+            }
+            else{
+
+                document.getElementById('txt3').value= parseInt(a)-parseInt(b)
+            }
+        }
+        function mul(){
+            if (a=="" || a<0){
+                alert("text box 1  is negative or may be blank")
+            }
+            else if(b=="" || b<0){
+                alert("text box 2  is negative or may be blank")
+            }
+            else{
+
+                document.getElementById('txt3').value= parseInt(a)*parseInt(b)
+            }
+           
+        }
+        function div(){
+            if (a=="" || a<0){
+                alert("text box 1  is negative or may be blank")
+            }
+            else if(b=="" || b<0){
+                alert("text box 2  is negative or may be blank")
+            }
+            else{
+
+                document.getElementById('txt3').value= parseInt(a)/parseInt(b)
+            }
+           
+        }
+
+
+    </script>
+    <style>
+        
+        input{
+            width: 250px;
+            height: 20px;
+            margin-left: 200px;
+            border: 2px solid red;
+            cursor: pointer;
+        }
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="text" name="" id="txt1" placeholder="enter your text "><label for="" id="lb1"><font color="red" size="6">*</font></label><br><br>
+        
+        <input type="text" name="" id="txt2" placeholder="enter your text "><label for="" id="lb2"><font color="red" size="6">*</font></label><br><br>
+        <input type="text" name="" id="txt3" placeholder="" value="your value is here"><br><br>
+        <div>
+
+        </div>
+        <input type="button" value="add" onclick="addition()"/>
+        <!-- <input type="button" value="sub" onclick="sub()"/>
+        <input type="button" value="mul" onclick="mul()"/>
+        <input type="button" value="div" onclick="div()"/> -->
+    </div>
+    
+</body>
+</html>
