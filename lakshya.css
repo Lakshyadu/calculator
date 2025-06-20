@@ -1,0 +1,54 @@
+ button{
+height:50px;
+width:50px;
+background-color:gray;
+border-radius:25px;
+color:white;
+border:none;
+cursor:grab;
+font-size:2rem;
+font-weight:bold;
+
+}
+.keys{
+	grid-template-columns:repeat(4,1fr);
+	display:grid;
+	gap:10px;
+	padding:25px;
+}
+.container{
+	font-style:arial;
+	max-width:500px;
+	border-radius:15px;
+	overflow:hidden;
+background-color:black;
+}
+#lakshya{
+	width:100%;
+	padding:10px;
+	font-size:3rem;
+	text-align:left;
+	border:none;
+	background-color:gray;
+	color:white;
+}
+body{
+	margin:0;
+	justify-content: center;
+	align-items: center;
+display:flex;
+height:100vh;
+}
+button:hover{
+	background-color: aquamarine;
+}
+button:active{
+	background-color: blue;
+}
+.operator-button{
+	background-color: orangered;
+}
+.operator-button:hover{
+	background-color: brown;
+	
+}
