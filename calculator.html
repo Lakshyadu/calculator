@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+    <style>  
+    </style>
+	<link rel="stylesheet" href="lakshya.css">
+  <script>
+         const display = document.getElementById("lakshya");
+         function appendTodisplay(input){
+          lakshya.value +=input;
+         }
+         function clearDisplay()
+         {
+          lakshya.value=" ";
+         }
+        function calculate()
+        {
+          try{
+            lakshya.value=eval(lakshya.value);
+          }
+          catch(error)
+          {
+            lakshya.value="error";
+          }
+
+          }
+  </script>
+  </head>
+<body>
+  <div class="container">
+    <input id="lakshya" readonly>
+      <div class="keys">
+        <button onclick="appendTodisplay('+')" class="operator-button">+</button>
+        <button onclick="appendTodisplay('7')">7</button>
+        <button onclick="appendTodisplay('8')">8</button>
+        <button onclick="appendTodisplay('9')">9</button>
+        <button onclick="appendTodisplay('-')" class="operator-button">-</button>
+        <button onclick="appendTodisplay('4')">4</button>
+        <button onclick="appendTodisplay('5')">5</button>
+        <button onclick="appendTodisplay('6')">6</button>
+        <button onclick="appendTodisplay('*')" class="operator-button">*</button>
+        <button onclick="appendTodisplay('3')">3</button>
+         <button onclick="appendTodisplay('2')">2</button>
+         <button onclick="appendTodisplay('1')">1</button>
+         <button onclick="appendTodisplay('/')" class="operator-button">/</button>
+         <button onclick="appendTodisplay('0')">0</button>
+         <button onclick="calculate()" class="operator-button">=</button>
+         <button onclick="clearDisplay()" class="operator-button">C</button>
+
+      </div>
+  </div>
+
+
+</body>
+
+</html>
